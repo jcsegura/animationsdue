@@ -1,0 +1,365 @@
+/* Beginning of Body Styling aka Entire Page Shared Styling */
+body h1{
+  font-family:"new century schoolbook,"; Verdana, sans-serif;
+  font-weight: bold;
+}
+
+body h2{
+  font-family: Verdana bold, sans-serif;
+  font-weight: italic, bold;
+  font-size:30px;
+  color: #cfcfcf;
+}
+/* End of Body Styling */
+
+
+/* Beginning of Container Styling */
+.container {
+  margin-top: 10%;
+  text-align: center;
+}
+.sub_container {
+  text-align: center;
+}
+.nav_container {
+  margin-top: 10%;
+}
+.sub_nav_container {
+  margin-top: 5%;
+}
+/* End of Container Styling */
+
+
+/* Beginning of Animation Styling */
+.runner {
+    margin
+    /* Set the width and height to the size of one single frame of your spritesheet */
+    width:100px;
+    height:200px;
+    background-image: url("../images/runner.png");
+
+    /* Set the step count to 1 frame less than your total spritesheet */
+  -webkit-animation: play 1s steps(16) infinite;
+     -moz-animation: play 1s steps(16) infinite;
+      -ms-animation: play 1s steps(16) infinite;
+       -o-animation: play 1s steps(16) infinite;
+          animation: play 1s steps(16) infinite;
+}
+
+/*[][] These are your browser display parameters for Chrome, Mozilla, IE, etc. [][]*/
+@-webkit-keyframes play {
+ from { background-position:    0px; }
+ /* This is the max width of your entire spritesheet */
+   to { background-position: -1600px; }
+}
+
+@-moz-keyframes play {
+ from { background-position:    0px; }
+   to { background-position: -1600px; }
+}
+
+@-ms-keyframes play {
+ from { background-position:    0px; }
+   to { background-position: -1600px; }
+}
+
+@-o-keyframes play {
+ from { background-position:    0px; }
+   to { background-position: -1600px; }
+}
+
+@keyframes play {
+ from { background-position:    0px; }
+   to { background-position: -1600px; }
+}
+/* End of Animation Styling */
+
+
+/* Beginning of Navigational Links Styling */
+.links {
+  text-transform: uppercase;
+}
+.sublinks {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+/* End of Navigational Links Styling */
+
+
+/* Beginning of Animation Styling */
+#bigbox {
+  margin:auto;
+  margin-top: 50px;
+  width: 600px;
+  height: 575px;
+  background-image: url("http://i.imgur.com/J8MYJPe.jpg");
+  border: 4px solid black;
+}
+
+#bigbox1 {
+margin:auto;
+margin-top: 50px;
+width: 510px;
+height:510px;
+background-image: url("../images/industrialboys.png");
+border: 2px solid black;
+}
+
+
+#bigbox2 {
+  margin:auto;
+  margin-top: 50px;
+  width: 500px;
+  height: 555px;
+  background-image: url("../images/workerman.png");
+  border: 4px solid black;
+}
+
+/* Animated Elements Separated Into Individual States */
+
+/*Animation Overflow aka What To Do When It's Outside The Container */
+#philosopher {
+  overflow: hidden;
+}
+
+#quote {
+  overflow: hidden;
+}
+
+#philosopher1 {
+  overflow: hidden;
+ }
+
+#quote1 {
+  overflow: hidden;
+ }
+
+#philospher2 {
+  overflow: hidden;
+ }
+
+#quote2 {
+  overflow: hidden;
+}
+
+/* Intial Position State */
+#philosopher {
+  font-weight: bold;
+  transform:translateY(-800px);
+  opacity: .5;
+}
+
+#philosopher1 {
+font-weight: bold;
+transform:translateY(-800px);
+opacity: .5;
+}
+
+#philosopher2 {
+  font-weight: bold;
+  transform:translateY(-800px);
+  opacity: .5;
+
+}
+
+#quote {
+  font-style: bold;
+  transform:translateX(-100px);
+  opacity: 1;
+}
+
+#quote1{
+font-style: bold;
+transform:translateX(-900px);
+opacity: 1;
+
+}
+
+#quote2{
+  font-style: bold;
+  transform:translateX(-700px);
+  opacity: 1;
+
+}
+
+#karl {
+  transform:translateY(190px);
+  opacity:.1;
+}
+
+#friedrich{
+  transform:translateY(120px);
+  opacity:.3;
+
+}
+
+#immanuel{
+  transform:translateY(185px);
+  opacity:.1;
+
+}
+
+
+/* Animation Duration */
+#philosopher {
+transition: .1s;
+}
+
+#philosopher1{
+transition: .5s;
+}
+
+#philosopher2{
+transition: .5s;
+
+}
+
+#quote {
+  transition: .4s;
+}
+
+#quote1{
+transition: .4s;
+}
+
+
+#quote2{
+transition: .4s;
+
+}
+
+#karl {
+  transition: 1.2s;
+}
+
+#friedrich {
+transition: 1.2s;
+
+}
+
+#immanuel{
+transition: 1.2s;
+
+}
+
+/* When Hovered Over Will Perform This Action */
+#bigbox:hover, #philosopher  {
+  font-size: 20px;
+  transform:translateY(100px);
+  opacity: .6;
+}
+
+#bigbox1:hover, #philosopher1 {
+font-size: 20px;
+transform:translateY(100px);
+opacity: .6;
+
+ }
+
+#bigbox2:hover, #philosopher2{
+  font-size: 20px;
+  transform:translateY(100px);
+  opacity: .8;
+
+}
+
+
+
+
+
+#bigbox:hover, #quote  {
+  transform:translate(0px, 100px);
+  opacity: 1;
+  background-color: rgba(20,20,20,.6);
+  border: 2px solid white;
+}
+
+
+#bigbox1:hover, #quote1{
+  transform:translate(0px, 100px);
+  opacity: 1;
+  background-color: rgba(20,20,20,.6);
+  border: 2px dotted white;
+
+}
+
+
+#bigbox2, #quote2 {
+  transform:translate(0px, 100px);
+  opacity: 1;
+  background-color: rgba(20,20,20,.6);
+  border: 2px solid white;
+
+}
+
+
+
+#bigbox:hover,#karl{
+  transform:translate(90px,80px);
+  font-style: italic;
+  opacity: 1;
+
+}
+
+#bigbox1:hover, #friedrich{
+  transform:translate(90px,80px);
+  font-style: italic;
+  opacity: 1;
+}
+
+#bigbox2:hover,#immanuel{
+  transform:translate(90px,80px);
+  font-style: italic;
+  opacity: 1;
+}
+
+
+
+
+/*the size of images are going to be below here */
+#bigbox:hover{
+  background-size: 500px;
+  overflow:hidden;
+}
+
+#bigbox1 {
+  background-size: 850px;
+  overflow:hidden;
+}
+
+#bigbox2 {
+  background-size: 600px;
+  overflow:hidden;
+}
+
+
+/* Shared Font Styling */
+#philosopher{
+  color: white;
+  }
+#philosopher1{
+    color: white;
+  }
+ #philosopher2{
+   color: white;
+   }
+#quote{
+     color: white;
+   }
+#quote1{
+ color: white;
+    }
+#quote2{color: white;
+  }
+
+#karl{color: white;
+}
+
+#friedrich{
+color: white;
+}
+
+#immanuel {
+color: white;
+}
+/* End of  Animation Styling */
